@@ -1,10 +1,10 @@
-# minions-content — Content Publishing Implementation Prompt
+**MINIONS CONTENT — CONTENT PUBLISHING**
 
 You are tasked with building **minions-content**, a structured content publishing and lifecycle management system built on the Minions SDK. This is a structured approach to article creation, SEO optimization, and publishing workflows designed for content teams and AI agents.
 
 ---
 
-## Project Overview
+**PROJECT OVERVIEW**
 
 **minions-content** provides structured content creation with built-in SEO analysis, content calendar integration, and multi-channel publishing pipelines. Built on top of `minions-docs` for the document layer, it adds publishing-specific workflows, metadata management, and content graph analysis.
 
@@ -103,7 +103,7 @@ from minions import (
 
 ---
 
-## Core Primitives
+**CORE PRIMITIVES**
 
 The system is built from these minion types:
 
@@ -229,7 +229,7 @@ A structured brief outlining what content should be created.
 
 ---
 
-## Beyond the Standard Pattern
+**BEYOND THE STANDARD PATTERN**
 
 ### 1. Built on minions-docs
 
@@ -385,7 +385,7 @@ content pipeline bottlenecks
 
 ---
 
-## Dual SDK Support (TypeScript + Python)
+**DUAL SDK SUPPORT (TYPESCRIPT + PYTHON)**
 
 Both SDKs provide identical functionality:
 
@@ -421,7 +421,7 @@ score = metadata.seo_score  # 0-100
 
 ---
 
-## CLI Commands
+**CLI COMMANDS**
 
 The `content` CLI extends the base `minions` CLI with publishing-specific commands.
 
@@ -481,7 +481,7 @@ content report --seo-overview
 
 ---
 
-## Documentation Site
+**DOCUMENTATION SITE**
 
 Built with **Astro Starlight** with dual-language SDK examples.
 
@@ -518,7 +518,7 @@ Every code example includes both TypeScript and Python tabs.
 
 ---
 
-## Agent Use Cases
+**AGENT USE CASES**
 
 **Automated Content Creation:**
 An agent generates article drafts from content briefs, optimizing for SEO and readability.
@@ -540,7 +540,7 @@ An agent generates weekly content performance reports with SEO scores, traffic m
 
 ---
 
-## Project Structure
+**PROJECT STRUCTURE**
 
 ```
 minions-content/
@@ -596,7 +596,7 @@ minions-content/
 
 ---
 
-## Integration with minions-docs
+**INTEGRATION WITH MINIONS-DOCS**
 
 **minions-content** builds on **minions-docs** by:
 
@@ -620,7 +620,7 @@ minions-content/
 
 ---
 
-## Tone and Positioning
+**TONE & POSITIONING**
 
 **minions-content** is a structured content publishing system designed for content teams and AI-native workflows. The messaging should emphasize:
 
@@ -634,7 +634,7 @@ The docs should speak to content marketers, editors, and publishing teams buildi
 
 ---
 
-## Success Criteria
+**SUCCESS CRITERIA**
 
 You will know this implementation is successful when:
 
