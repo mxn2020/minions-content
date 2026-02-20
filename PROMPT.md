@@ -126,7 +126,7 @@ A publishable content piece.
 - `canonicalUrl` (url) — canonical URL if syndicated
 
 **Relations:**
-- `implements` → `document` from `minions-docs` (underlying structured document)
+- `implements` → `document` from `@minions-docs/sdk` (underlying structured document)
 - `references` → `content-brief` (if created from a brief)
 - `references` → `publication` (when published)
 - `references` → other `article` minions (cross-references)
@@ -224,7 +224,7 @@ A structured brief outlining what content should be created.
 - `status` (select: new/assigned/in-progress/completed, required)
 
 **Relations:**
-- `references` → `event` from `minions-calendar` (scheduled deadline)
+- `references` → `event` from `@minions-calendar/sdk` (scheduled deadline)
 - `parent_of` → `article` or `draft` (content created from this brief)
 
 ---
@@ -233,7 +233,7 @@ A structured brief outlining what content should be created.
 
 ### 1. Built on minions-docs
 
-Content articles extend the document layer from `minions-docs`, inheriting:
+Content articles extend the document layer from `@minions-docs/sdk`, inheriting:
 - Block-based content structure
 - Revision tracking
 - Multi-format rendering (Markdown, HTML, PDF)
@@ -281,7 +281,7 @@ content seo-optimize <article-id> --auto-fix
 
 ### 3. Content Calendar Integration
 
-Link content briefs and articles to calendar events from `minions-calendar`.
+Link content briefs and articles to calendar events from `@minions-calendar/sdk`.
 
 **Features:**
 - Schedule content deadlines
@@ -391,7 +391,7 @@ Both SDKs provide identical functionality:
 
 **TypeScript:**
 ```typescript
-import { ArticleBuilder, SEOAnalyzer, ContentGraph } from 'minions-content';
+import { ArticleBuilder, SEOAnalyzer, ContentGraph } from '@minions-content/sdk';
 
 const article = new ArticleBuilder()
   .withTitle('AI Agents in 2026')
